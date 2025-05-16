@@ -1,6 +1,6 @@
 # Velvet Vogue - Fashion E-Commerce Platform
 
-A modern and feature-rich e-commerce platform built with PHP and MySQL, specifically designed for fashion retail. This application provides a seamless shopping experience for customers and comprehensive management tools for administrators.
+A modern and feature-rich e-commerce platform built with PHP and MySQL, specifically designed for fashion retail. 
 
 ## Project Structure
 
