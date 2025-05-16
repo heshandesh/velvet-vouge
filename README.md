@@ -57,7 +57,37 @@ If you need to modify these settings, you can find them in the database configur
 
 ## Features
 
-- [List your main features here]
+### User Features
+- User authentication system (login/register)
+- Product browsing with categories and subcategories
+- Product search and filtering
+- Product details view
+- Shopping cart functionality
+- Contact and support pages
+- About page with company information
+
+### Admin Features
+- Secure admin dashboard
+- Stock management system
+  - Add/Edit stock items
+  - Track stock quantities
+  - Manage product images
+  - Set prices and discounts
+- Product categorization
+  - Main categories
+  - Sub-categories
+  - Product types
+- User role management
+- Activity tracking for stock changes
+
+### Technical Features
+- Responsive design
+- Dark mode support
+- Image management system
+- Pagination for large datasets
+- Real-time search and filtering
+- Loading animations
+- Secure session management
 
 ## Contributing
 
