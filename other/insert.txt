@@ -1,0 +1,15 @@
+<?php
+include '../../db.php';
+include '../../controllers/UserController.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $data = json_decode(file_get_contents('php://input'), true);
+    $name = $data['name'];
+    $email = $data['email'];
+    $controller = new UserController($conn);
+    $response = $controller->createUser($name, $email);
+    echo json_encode(['success' => $response]);
+} else {
+    echo json_encode(['error' => 'Invalid request method']);
+}
+?>

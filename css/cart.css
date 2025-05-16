@@ -1,0 +1,184 @@
+.cart {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  animation: fade-in 0.2s;
+  color: var(--element-text-color);
+}
+.cart .close-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--overlay-area-color);
+}
+.cart .bag {
+  animation: slide-left-cart 0.2s;
+  position: fixed;
+  height: 100%;
+  background-color: var(--body-color);
+  width: 400px;
+  right: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cart .bag .item {
+  padding: 20px;
+  position: relative;
+}
+.cart .bag .item .close {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.cart .bag .item .close i {
+  font-size: 20px;
+}
+.cart .bag .item h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.cart .bag .item .product-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  overflow-y: auto;
+  height: calc(100vh - 218px);
+  scroll-behavior: smooth;
+}
+.cart .bag .item .product-container .product {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--element-color);
+  padding: 18px;
+  column-gap: 10px;
+  position: relative;
+}
+
+.cart .bag .item .product-container .product-error {
+  background-color: rgb(233, 20, 66, 0.2);
+}
+.cart .bag .item .product-container .product .stock-status {
+  position: absolute;
+  bottom: -5px;
+  color: black;
+  padding: 2px 4px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.cart .bag .item .product-container .product .all-selected {
+  background-color: var(--low-stock);
+}
+.cart .bag .item .product-container .product .mis-match {
+  background-color: var(--out-stock);
+}
+.cart .bag .item .product-container .product .image {
+  width: 30%;
+  height: 90px;
+  background-color: var(--body-color);
+  overflow: hidden;
+  position: relative;
+}
+.cart .bag .item .product-container .product .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.cart .bag .item .product-container .product .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  position: relative;
+}
+.cart .bag .item .product-container .product .card .remove-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(233, 20, 66);
+  color: white;
+}
+.cart .bag .item .product-container .product .card .count {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.cart .bag .item .product-container .product .card .count button {
+  padding: 3px 8px;
+}
+.cart .bag .item .product-container .product .card h3 {
+  font-size: 12px;
+  width: 200px;
+}
+.cart .bag .item .product-container .product .card hr {
+  margin-bottom: 30px;
+}
+.cart .bag .item .product-container .product .card .amount {
+  position: absolute;
+  right: 90px;
+  opacity: 0.5;
+  bottom: 0;
+}
+.cart .bag .item .product-container .product .card .old-price {
+  text-decoration: line-through;
+}
+.cart .bag .item .scroll-shadow {
+  content: "";
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  animation: fade-in 0.2s;
+  z-index: 2;
+}
+.cart .bag .item .shadow-top {
+  background: linear-gradient(to bottom, var(--body-color), rgb(0, 0, 0, 0));
+  top: 65px;
+  display: none;
+}
+.cart .bag .item .shadow-bottom {
+  background: linear-gradient(to top, var(--body-color), rgb(0, 0, 0, 0));
+  bottom: 5px;
+}
+.cart .check-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: rgb(27, 27, 27);
+}
+.cart .check-out .total {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart .check-out .total p {
+  font-size: 16px;
+  color: white;
+}
+.cart .check-out .pay {
+  display: flex;
+  padding: 10px;
+}
+.cart .check-out .pay button {
+  background: rgb(78, 78, 78);
+  color: rgb(230, 230, 230);
+  width: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: white;
+}

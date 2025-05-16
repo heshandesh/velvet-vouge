@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="getUsers()">Hello</button>
+    <script>
+      async function insertUser() {
+        const name = "Heshan";
+        const email = "heshandesh@email.com";
+        const response = await fetch("../data/api/category/insert.php", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email }),
+        });
+        const data = await response.json();
+        console.log(data);
+      }
+
+      async function updateUser(id, name, email) {
+        const ids = 1;
+        const names = "Heshan";
+        const emails = "heshandesh@email.com";
+        const response = await fetch("../data/api/category/update.php", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ ids, names, emails }),
+        });
+        const data = await response.json();
+        console.log(data);
+      }
+
+      async function deleteUser() {
+        const id = 1;
+        const response = await fetch("../data/api/category/delete.php", {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ id }),
+        });
+        const data = await response.json();
+        console.log(data);
+      }
+
+      async function getUsers() {
+        const response = await fetch("../data/api/category/get.php", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        const data = await response.json();
+        console.log(data);
+      }
+    </script>
+  </body>
+</html>

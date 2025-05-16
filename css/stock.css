@@ -1,0 +1,307 @@
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.stock-container {
+  width: 100%;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.stock {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  background-color: var(--element-color);
+  color: var(--element-text-color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 22px;
+  min-height: calc(100vh - 160px);
+  max-height: calc(100vh - 160px);
+  position: relative;
+}
+
+.stock hr {
+  height: 1px;
+  opacity: 0.1;
+  margin: 10px 0;
+  background-color: var(--element-text-color);
+}
+
+.stock .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stock .title h3 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.stock .title .activity {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.stock .title .activity .card {
+  width: auto;
+  min-width: 300px;
+  height: 55px;
+  padding: 6px;
+  background-color: var(--body-color);
+}
+
+.stock .title .activity .card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.stock .title .activity .card .content #pAddedText,
+.stock .title .activity .card .content #pModifiedText {
+  display: none;
+}
+
+.stock .title .activity .card .content .title {
+  font-size: 12px;
+  margin-top: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2px;
+  opacity: 1;
+}
+
+.stock .title .activity .card .content p {
+  font-size: 11px;
+  margin-top: 2px;
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.stock .content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  overflow-y: auto;
+}
+
+.stock .content-container form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.stock .content-container form input,
+.stock .content-container form select {
+  padding: 5px;
+  background-color: var(--body-color);
+  color: var(--element-text-color);
+  border: none;
+  outline: none;
+}
+
+.stock .content-container form select {
+  cursor: pointer;
+}
+
+.stock .content-container form label {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.stock .content-container form .choose-image-button {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--body-color);
+  opacity: 1;
+  color: var(--element-text-color);
+  text-align: center;
+  cursor: pointer;
+}
+
+.stock .content-container form .cover-image-hide {
+  display: none;
+}
+
+.stock .content-container form .selected-cover {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 5px 0;
+  border: 2px solid var(--body-color);
+}
+
+.stock .content-container form .selected-cover .remove-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgb(233, 20, 66);
+  color: white;
+}
+
+.stock .content-container form .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 10px;
+  position: sticky;
+  bottom: 0;
+  background-color: var(--element-color);
+  padding-top: 10px;
+}
+
+.stock .content-container form .actions button {
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  padding: 5px;
+  background-color: var(--element-text-color);
+  color: var(--element-color);
+}
+
+.stock .content-container form .actions .clear {
+  background-color: #797979;
+  color: white;
+}
+
+.stock .content-container form .actions .edit {
+  background-color: #f7e014;
+  color: black;
+}
+
+.stock .content-container form .selected-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stock .content-container form .selected-cover:hover .remove-image {
+  opacity: 1;
+}
+
+.stock .content-container .content {
+  width: 150%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.stock .content-container .content .search {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  column-gap: 10px;
+  padding-bottom: 10px;
+  position: sticky;
+  z-index: 10;
+  height: 40px;
+  top: 0;
+  background-color: var(--element-color);
+}
+
+.stock .content-container .content .search::after {
+  background-color: var(--element-color);
+  width: 100%;
+  height: 2px;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+}
+
+.stock .content-container .content .search select {
+  background-color: var(--body-color);
+  color: var(--element-text-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.stock .content-container .content .search input {
+  width: 100%;
+  padding: 5px;
+  background-color: var(--body-color);
+  color: var(--element-text-color);
+  border: none;
+  outline: none;
+}
+
+.stock .content-container .content .search button {
+  width: 32px;
+  background-color: var(--element-text-color);
+  color: var(--element-color);
+  position: relative;
+}
+
+.stock .content-container .content .search button .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: rgb(233, 20, 66);
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: none;
+}
+
+.stock .content-container .content .search #btnClearFilters {
+  width: auto;
+  background-color: rgb(233, 20, 66);
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: none;
+}
+
+#filter {
+  position: absolute;
+  top: calc(50% + 25px);
+  transform: translateY(-50%);
+  right: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: fade-up-filter-stock 0.2s;
+  display: none;
+  z-index: 15;
+}
+
+#filter .close-btn {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  background: var(--element-color);
+  z-index: 99;
+  color: var(--element-text-color);
+}
+
+#filter .close-btn i {
+  font-size: 18px;
+}
+
+.filter-hide {
+  opacity: 0;
+  transform: translateY(-40%) !important;
+}
+
+#pagination {
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+}
+
+table thead {
+  margin: 0;
+  top: 40px;
+}

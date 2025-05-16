@@ -1,0 +1,53 @@
+.admin-nav-container {
+  width: 100%;
+  background: rgb(27, 27, 27);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.admin-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  height: 50px;
+  color: rgb(238, 238, 238);
+}
+
+.admin-nav .left,
+.admin-nav .right {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+}
+.admin-nav .left .logo i {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-nav .left h3 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.admin-nav .right p {
+  letter-spacing: 1px;
+}
+
+.admin-nav .right .toggle {
+  background: rgb(78, 78, 78);
+  color: rgb(230, 230, 230);
+}
+
+.admin-nav .separator {
+  height: 10px;
+  width: 1px;
+  background-color: rgb(97, 97, 97);
+}

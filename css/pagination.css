@@ -1,0 +1,103 @@
+.pagination-container {
+  width: 100%;
+  background: rgb(27, 27, 27);
+}
+
+.pagination {
+  width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  padding: 5px;
+  height: 50px;
+}
+
+.no-result {
+  width: var(--container-width);
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  padding: 5px;
+  height: 50px;
+  display: none;
+}
+
+.pagination .separator {
+  height: 10px;
+  width: 1px;
+  background-color: rgb(97, 97, 97);
+}
+
+.pagination .pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.pagination .pages #divPageButtonContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.pagination .pages .active {
+  background: rgb(224, 224, 224);
+  color: rgb(15, 15, 15);
+}
+
+.pagination .pages button {
+  background: rgb(78, 78, 78);
+  color: rgb(230, 230, 230);
+  font-weight: 500;
+  padding: 6px 10px;
+}
+
+.pagination .jump-page {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0;
+  background: black;
+  justify-content: center;
+}
+
+.pagination .jump-page .jump-input {
+  position: relative;
+  border: 1px solid rgb(104, 104, 104);
+  color: rgb(238, 238, 238);
+  background: none;
+  display: flex;
+  column-gap: 2px;
+  align-items: center;
+  flex-direction: row;
+  padding: 4px;
+}
+
+.pagination .jump-page .jump-input span {
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.pagination .jump-page .jump-input input {
+  width: 50px;
+  outline: none;
+  text-align: center;
+  background: none;
+  color: white;
+}
+
+.pagination .jump-page button {
+  background: none;
+  background: rgb(224, 224, 224);
+  color: rgb(15, 15, 15);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

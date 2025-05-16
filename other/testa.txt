@@ -1,0 +1,39 @@
+<?php
+include "{$_SERVER['DOCUMENT_ROOT']}/Velvet/data/db.php";
+include "{$_SERVER['DOCUMENT_ROOT']}/Velvet/data/models/UserModel.php";
+
+class UserController
+{
+    private $userModel;
+
+    public function __construct($dbConnection)
+    {
+        $this->userModel = new UserModel($dbConnection);
+    }
+
+    public function createUser($name, $email)
+    {
+        return $this->userModel->insert($name, $email);
+    }
+
+    public function getUsers()
+    {
+        return $this->userModel->getAll();
+    }
+
+    public function getUserById($id)
+    {
+        return $this->userModel->getUserById($id);
+    }
+
+    public function updateUser($id, $name, $email)
+    {
+        return $this->userModel->update($id, $name, $email);
+    }
+
+    public function deleteUser($id): mixed
+    {
+        return $this->userModel->delete($id);
+    }
+}
+?>

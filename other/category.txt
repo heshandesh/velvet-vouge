@@ -1,0 +1,54 @@
+Casual Wear
+
+-Tops (T-Shirts, Crop Tops, Casual Blouses, Hoodies, Sweaters) DONE
+
+T-Shirts
+-Black,M,Cotton,Male
+-Black,L,Cotton,Male
+-White,M,Cotton,Male
+-White,L,Cotton,Male
+-Pink,M,Cotton,Male
+-Pink,L,Cotton,Male
+-Black,M,Cotton,Female
+-Black,L,Cotton,Female
+-White,M,Cotton,Female
+-White,L,Cotton,Female
+-Pink,M,Cotton,Female
+-Pink,L,Cotton,Female
+
+-Bottoms (Jeans, Casual Pants, Shorts, Casual Skirts) DONE
+-Dresses (Casual Dresses, Day Dresses, Rompers)
+-Loungewear (Pajamas, Lounge Sets, Joggers)
+-Activewear (Leggings, Sports Bras, Joggers, Workout Tops)
+-Footwear (Sneakers, Sandals, Casual Boots, Slides)
+
+Formal Wear
+
+-Formal Tops (Blouses, Button-Down Shirts)
+-Formal Bottoms (Trousers, Tailored Pants, Pencil Skirts)
+-Dresses & Jumpsuits (Evening Dresses, Formal Jumpsuits)
+-Blazers & Suiting (Blazers, Suit Sets, Dressy Jackets)
+-Footwear (Heels, Loafers, Formal Boots, Dress Shoes)
+
+Outerwear 9
+
+-Jackets & Coats (Casual Jackets, Overcoats, Trench Coats)
+-Blazers & Vests (Formal Blazers, Casual Vests, Cardigans)
+
+Underwear 10
+
+-Bras & Bralettes (Push-Up, Sports Bras, Wireless)
+-Bottoms (Briefs, Boxers, Thongs, Boyshorts)
+-Sets (Matching Bra & Underwear Sets)
+-Shapewear (Bodysuits, High-Waist Shapers)
+
+Accessories 11
+  
+-Bags & Backpacks (Totes, Crossbody Bags, Clutches)
+-Jewelry & Watches (Casual Jewelry, Statement Pieces, Watches)
+-Hats & Scarves (Caps, Beanies, Formal Scarves)
+
+Summer 12
+
+-Swimwear (Bikinis, One-Piece Swimsuits, Swim Trunks)
+-Beach Accessories (Cover-Ups, Beach Bags, Sunglasses)

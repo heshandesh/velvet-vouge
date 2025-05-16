@@ -1,0 +1,109 @@
+.auth-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth {
+  width: 100%;
+  max-width: var(--container-width);
+  background-color: var(--element-color);
+  color: var(--element-text-color);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: zoom-in 0.5s ease forwards;
+}
+
+.auth .auth-body {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.auth .auth-body .image,
+.auth .auth-body .content {
+  width: 100%;
+}
+
+.auth .auth-body .image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 400px;
+}
+
+.auth .auth-body .login-image {
+  background-image: url("../images/auth/image1.jpg");
+}
+
+.auth .auth-body .register-image {
+  background-image: url("../images/auth/image2.jpg");
+}
+
+.auth .auth-body .success-image {
+  background-image: url("../images/auth/image3.jpg");
+}
+
+.auth .auth-body .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.auth .auth-body .content .data h3 {
+  font-size: 30px;
+}
+
+.auth .auth-body .content .data p {
+  font-size: 15px;
+}
+
+.auth .auth-body .content .login {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.auth .auth-body .content .data form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.auth .auth-body .content .data form label {
+  opacity: 0.5;
+}
+
+.auth .auth-body .content .data form input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--body-color);
+  color: var(--element-text-color);
+}
+
+.auth .auth-body .content .data form button {
+  background-color: var(--element-text-color);
+  color: var(--element-color);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.auth .auth-body .content .data form a {
+  text-decoration: none;
+  margin-top: 5px;
+  color: var(--element-text-color);
+}

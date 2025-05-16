@@ -1,0 +1,14 @@
+<?php
+include '../../db.php';
+include '../../controllers/UserController.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
+    $data = json_decode(file_get_contents('php://input'), true);
+    $id = $data['id'];
+    $controller = new UserController($conn);
+    $response = $controller->deleteUser($id);
+    echo json_encode(['success' => $response]);
+} else {
+    echo json_encode(['error' => 'Invalid request method']);
+}
+?>

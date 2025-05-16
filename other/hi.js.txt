@@ -1,0 +1,19 @@
+// main.js
+
+// Importing named exports
+import { add, subtract, sayHello, GetAllCategories } from "./mathOperations.js";
+
+// Importing the default export
+import PI from "./mathOperations.js";
+
+// Using the imported functions
+const sum = add(5, 3);
+const difference = subtract(10, 4);
+
+sayHello();
+const data = await GetAllCategories();
+console.log(data);
+
+console.log(`Sum: ${sum}`); // Outputs: Sum: 8
+console.log(`Difference: ${difference}`); // Outputs: Difference: 6
+console.log(`Value of PI: ${PI}`); // Outputs: Value of PI: 3.14

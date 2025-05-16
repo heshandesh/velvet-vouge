@@ -1,0 +1,13 @@
+<?php
+include '../../db.php';
+include '../../controllers/UserController.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $id = $_GET['id'];
+    $controller = new UserController($conn);
+    $users = $controller->getUserById($id);
+    echo json_encode(['data' => $users]);
+} else {
+    echo json_encode(['error' => 'Invalid request method']);
+}
+?>

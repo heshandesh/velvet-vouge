@@ -1,0 +1,68 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  position: relative;
+}
+td,
+th {
+  padding: 5px;
+  border: 1px solid var(--body-color);
+  color: var(--element-text-color);
+  text-align: left;
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #7e7e7e41;
+}
+
+th {
+  background-color: var(--body-color);
+  color: var(--element-text-color);
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 30px;
+}
+
+table tbody .select-row-delete {
+  background-color: rgb(233, 20, 66, 0.2);
+}
+
+table .empty-row {
+  cursor: default;
+}
+
+table .empty-row td {
+  text-align: center;
+  padding: 10px 0;
+}
+
+table .empty-row:hover {
+  background: none;
+}
+
+.table-image {
+  margin: 0 auto;
+  width: 25px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.table-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+td .table-row-delete {
+  background-color: rgb(233, 20, 66);
+  color: white;
+}
